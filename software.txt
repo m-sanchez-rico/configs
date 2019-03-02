@@ -1,0 +1,12 @@
+graphics driver.
+synaptic
+chrome (https://askubuntu.com/questions/510056/how-to-install-google-chrome)
+ROS (http://wiki.ros.org/indigo/Installation/Ubuntu)
+Gitkracken (https://support.gitkraken.com/how-to-install/)
+qt (https://ros-qtc-plugin.readthedocs.io/en/latest/)
+vim
+vim-gtk
+git
+git-gui
+gitk
+

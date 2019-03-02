@@ -4,3 +4,5 @@ source ~/catkin_ws/devel/setup.bash
 alias cd..='cd ..'
 alias cds='cd ~/catkin_ws/src/'
 alias vim='gvim'
+alias cdt='cd ~/Thesis-Turing'
+force_color_prompt=yes
