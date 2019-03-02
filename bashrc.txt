@@ -1,0 +1,6 @@
+source /opt/ros/indigo/setup.bash
+source ~/catkin_ws/devel/setup.bash
+
+alias cd..='cd ..'
+alias cds='cd ~/catkin_ws/src/'
+alias vim='gvim'
