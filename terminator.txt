@@ -1,0 +1,21 @@
+~/.config/terminator/config
+[global_config]
+  geometry_hinting = False
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.62
+    background_image = /home/maikel/Imágenes/jarvis-wallpaper_rotator_3.jpg
+    foreground_color = "#ffffff"
+    background_type = image
+    scroll_background = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+      size = 1100, 600
+[plugins]
