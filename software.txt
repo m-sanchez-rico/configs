@@ -1,12 +1,8 @@
 graphics driver.
+ROS
+Chrome
+sudo apt-get install terminator
+sudo apt-get install git
+sudo apt-get install git-gui
+sudo apt-get install vim-gtk3
 synaptic
-chrome (https://askubuntu.com/questions/510056/how-to-install-google-chrome)
-ROS (http://wiki.ros.org/indigo/Installation/Ubuntu)
-Gitkracken (https://support.gitkraken.com/how-to-install/)
-qt (https://ros-qtc-plugin.readthedocs.io/en/latest/)
-vim
-vim-gtk
-git
-git-gui
-gitk
-
