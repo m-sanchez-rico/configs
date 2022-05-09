@@ -1,4 +1,5 @@
-graphics driver.
+# Software to set up ubuntu 
+graphics driver
 ROS
 Chrome
 sudo apt-get install terminator

@@ -1,0 +1,5 @@
+#content of my ~/.gitconfig
+[diff]
+	tool = gvimdiff
+[difftool]
+	prompt = false
