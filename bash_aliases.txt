@@ -1,6 +1,7 @@
 #Content of files ~/.bash_aliases
 alias cd..='cd ..'
 alias cds='cd ~/catkin_ws/src/'
+alias cdc='cd ~/catkin_ws/
 alias cdt='cd ~/Documentos/Thesis-Turing'
 alias vim='gvim'
 alias ex='nautilus .'
