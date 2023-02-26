@@ -8,3 +8,15 @@ sudo apt-get install git-gui
 sudo apt-get install vim-gtk3
 sudo apt-get install synaptic
 sudo apt-get install texmaker
+install obsidian && load vault (https://help.obsidian.md/Getting+started/Download+and+install+Obsidian)
+install brave browsher (https://brave.com/linux/)
+install vscode with updates (https://code.visualstudio.com/docs/setup/linux)
+	Plugins:
+		- vscode-icons (CSCode Icons Team)
+		- Python by Microsoft (ms-python.python)
+		- C/C++ by Microsoft (ms-vscode.cpptools) (configuration: https://www.youtube.com/watch?v=RXyFSnjMd7M)
+		- CMake by twxs (twxs.cmake)
+		- ROS (Microsoft)
+		- Remote-SSH (Microsoft)
+
+
