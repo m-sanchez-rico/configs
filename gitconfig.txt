@@ -3,3 +3,14 @@
 	tool = gvimdiff
 [difftool]
 	prompt = false
+
+
+Configure hhttps using gpg keys.
+1. Find last version of Credencial manager Core (*.deb) from: https://github.com/git-ecosystem/git-credential-manager/releases
+2. install `sudo dpkg -i <package_name>.deb`
+3. Configure git-hub `git config --global credential.helper manager` && `git config --global credential.credentialStore gpg`
+4. Create Gpg key using GnuPG keys using app passwords and key in Ubuntu.
+5. Install pass `sudp apt update && sudo apt install pass`
+6. gpg --list-key and get the public part -> similar to  5BC83CE8xxxxxx7B2DD480A1cccccD5BA
+7. Init the pass using -> `pass init 5B85C83CE8B7E22A7B2DD480A17377A41D5B34DA`
+8. The first time will ask you to log in github and after the OS will askyou for GpG pasfrase.
