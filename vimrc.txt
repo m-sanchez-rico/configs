@@ -1,13 +1,69 @@
-#content of my ~/.vimrc
-syntax on
-colorscheme slate
-set clipboard=unnamedplus
-set nowrap
+set number
+set numberwidth=1
+set mouse=a
+set clipboard=unnamed
+syntax enable
+set showcmd
+set ruler
+set encoding=utf-8
+set showmatch
+set sw=2
+"set relativenumber
+set laststatus=2
+set hlsearch "activate the search highlight
+set guioptions-=T
 
-" CTRL-C and CTRL-Insert are Copy
-vnoremap <C-C> "+y
-vnoremap <C-Insert> "+y
+" init plugging manager
+call plug#begin('~/.vim/plugged')
 
-" CTRL-V and SHIFT-Insert are Paste
-map <C-V>       "+gP
-map <S-Insert>      "+gP
+" Install gruvbox theme
+Plug 'morhetz/gruvbox'
+" Install easy motion, to move fastly in the file
+Plug 'easymotion/vim-easymotion'
+" Instaall Nerdtreee, to aopen files.
+Plug 'scrooloose/nerdtree'
+" install pluging to move between vim isntances
+Plug 'christoomey/vim-tmux-navigator'
+" for highlight the current linen
+Plug 'miyakogi/conoline.vim'
+" disable match highlight when finish the find 
+Plug 'romainl/vim-cool'
+" indent pluging
+Plug 'Yggdroot/indentLine'
+" end pluging manager
+call plug#end()
+
+" configuration for gruvbox, teme and contrast
+colorscheme gruvbox
+set background=dark
+let g:gruvbox_contrast_dark = "hard"
+
+" character to be used as a leader
+let mapleader=" "
+
+" config easy motion 
+nmap <Leader>s <Plug>(easymotion-s2)
+
+"config nerdtree shortcut
+   " cerrar navegador ficheros
+let NERDTreeQuitOnOpen=1
+nmap <Leader>nt :NERDTreeFind<CR>
+
+" config tmux navigator
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <C-Left> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
+
+" Config for conoline.vim
+let g:conoline_auto_enable = 1
+   " Show total matches
+let g:cool_total_matches = 1
+set statusline+=%{get(g:,'cool_is_searching',0)?'Yep':''}
+
+" Config Yggdroot/indentLine'
+let g:indentLine_enabled = 1
+let g:markdown_syntax_conceal=0
+let g:indentLine_char = '│'
+autocmd FileType help,nerdtree IndentLinesDisable
